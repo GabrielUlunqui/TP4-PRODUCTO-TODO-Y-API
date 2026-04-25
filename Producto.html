@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +7,58 @@
     <title>Filtrado de productos</title>
 </head>
 <body>
+
     <nav>
-    <a href="index.html">Inicio</a>
-    <a href="productos.html">Productos</a>
-    <a href="todo.html">Tareas</a>
-    <a href="api-demo.html">Pokédex</a>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="todo.html">Tareas</a>
+        <a href="api-demo.html">Pokédex</a>
     </nav>
 
-    
     <h1>Productos</h1>
 
-    <div class="filtros">
-        <div>
-            <label>Categoria</label><br>
-            <select id="selectCategoria">
-                <option value="todas">Todas</option>
-                <option value="Perifericos">Perifericos</option>
-                <option value="Memorias">Memorias</option>
-                <option value="Procesadores">Procesadores</option>
-                <option value="Placa madre">Placa Madre</option>
-                <option value="Gabinetes">Gabinetes</option>
-                
-            </select>
-        </div>
-    </div>
-    <div>
-        <label>Precio Maximo: $<span id="valorPrecio">300</span></label><br>
-        <input type="range" id="rangePrecio" min="0" max="300" value="300">
-    </div>
-    <div>
-        <label>
-            <input type="checkbox" id="checkStock"> Solo en stonck
-        </label>
-    </div>
-    <div>
-        <button class="btn-reset" id="btn-reset">Limpiar filtros</button>
+    <!-- 🔥 LAYOUT PRINCIPAL -->
+    <div class="layout">
+
+        <!-- 🧭 SIDEBAR -->
+        <aside class="sidebar">
+
+            <label>Buscar</label>
+            <input type="text" id="inputBusqueda" placeholder="Nombre del producto">
+
+            <div class="filtro-grupo">
+                <label>Categoría</label>
+                <select id="selectCategoria">
+                    <option value="todas">Todas</option>
+                    <option value="Perifericos">Perifericos</option>
+                    <option value="Memorias">Memorias</option>
+                    <option value="Procesadores">Procesadores</option>
+                    <option value="Placa madre">Placa Madre</option>
+                    <option value="Gabinetes">Gabinetes</option>
+                </select>
+            </div>
+
+            <div class="filtro-grupo">
+                <label>Precio Máximo: $<span id="valorPrecio">300</span></label>
+                <input type="range" id="rangePrecio" min="0" max="300" value="300">
+            </div>
+
+            <div class="filtro-grupo">
+                <label>
+                    <input type="checkbox" id="checkStock"> Solo en stock
+                </label>
+            </div>
+
+            <button class="btn-reset" id="btn-reset">Limpiar filtros</button>
+
         </aside>
-    </div>
-    <div>
-        <label>Buscar</label><br>
-        <input type="text" id="inputBusqueda" placeholder="Nombre del producto">
+
+        <!-- 🛒 PRODUCTOS -->
+        <main id="contenedor"></main>
+
     </div>
 
-    <div class="tarjetas" id="contenedor"></div>
     <script src="Productos.js"></script>
-
 
 </body>
 </html>

@@ -15,14 +15,13 @@ const rangePrecio = document.getElementById("rangePrecio");
 const valorPrecio = document.getElementById("valorPrecio");
 const checkStock = document.getElementById("checkStock");
 const inputBusqueda = document.getElementById("inputBusqueda");
-
+const btnReset = document.getElementById("btn-reset"); // 🔥 acá afuera
 
 const mostrarProductos = () => {
     const categoria = selectCategoria.value;
     const precioMax = Number(rangePrecio.value);
     const soloStock = checkStock.checked;
     const busqueda  = inputBusqueda.value.toLowerCase();
-    const btnReset  = document.querySelector("#btn-reset");
 
     const filtrados = productos.filter(p => {
         const porCategoria = categoria === "todas" || p.categoria === categoria;
@@ -40,23 +39,29 @@ const mostrarProductos = () => {
             <p>${p.enStock ? "En stock" : "Sin stock"}</p>
         </div>
     `).join("");
-;
-    btnReset.addEventListener("click", () => {
-        busqueda = "";
-        categoria= "todas";
-        rangePrecio = 1500;
-        valorPrecio.textContent = "1500";
-        soloStock = false;
-     mostrarProductos();
-});
-}
+};
 
+/* 🔥 BOTON RESET (BIEN HECHO) */
+btnReset.addEventListener("click", () => {
+    selectCategoria.value = "todas";
+    rangePrecio.value = 300;
+    valorPrecio.textContent = "300";
+    checkStock.checked = false;
+    inputBusqueda.value = "";
+
+    mostrarProductos();
+});
+
+/* EVENTOS */
 selectCategoria.addEventListener("change", mostrarProductos);
+
 rangePrecio.addEventListener("input", () => {
     valorPrecio.textContent = rangePrecio.value;
     mostrarProductos();
 });
+
 checkStock.addEventListener("change", mostrarProductos);
 inputBusqueda.addEventListener("input", mostrarProductos);
 
+/* INICIAL */
 mostrarProductos();
