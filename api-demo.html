@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApi</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="todo.html">Todo</a>
+        <a href="api-demo.html">Pokédex</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="pokedex-titulo">Pokédex</h1>
+
+        <input type="text" id="inputBusqueda" placeholder="Buscar pokemon por nombre o número...">
+
+        <p id="estado"></p>
+
+        <!-- 🔥 IMPORTANTE -->
+        <div class="grid" id="contenedor-pokemon"></div>
+    </div>
+
+    <!-- 🔥 revisá la ruta -->
+    <script src="api-demo.js"></script>
+
+</body>
+</html>
