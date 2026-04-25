@@ -77,7 +77,7 @@ Aplicación que consume la API de Pokémon utilizando Fetch:
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/TU-USUARIO/TU-REPO.git
+git clone https://github.com/GabrielUlunqui/TP4-PRODUCTO-TODO-Y-API
 ```
 
 2. Abrir el proyecto en Visual Studio Code
@@ -93,7 +93,7 @@ git clone https://github.com/TU-USUARIO/TU-REPO.git
 
 El proyecto está publicado en GitHub Pages:
 
-👉 https://TU-USUARIO.github.io/TU-REPO/
+👉 https://gabrielulunqui.github.io/TP4-PRODUCTO-TODO-Y-API/
 
 ---
 ## Estructura
