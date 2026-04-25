@@ -9,21 +9,17 @@
     --border-radius: 6px;
     --sombra: 0 2px 6px rgba(0,0,0,0.1);
 }
-
-/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* BODY */
 body {
     font-family: Arial, sans-serif;
     background-color: var(--color-fondo);
 }
 
-/* NAV */
 nav {
     background-color: var(--color-primario);
     padding: 15px;
@@ -35,7 +31,6 @@ nav a {
     margin-right: 10px;
 }
 
-/* CONTENEDOR PRINCIPAL */
 .todo-container {
     max-width: 500px;
     margin: 40px auto;
@@ -45,7 +40,6 @@ nav a {
     box-shadow: var(--sombra);
 }
 
-/* FORM */
 #form-tareas {
     display: flex;
     gap: 10px;
@@ -73,18 +67,15 @@ nav a {
     background-color: var(--color-primario-oscuro);
 }
 
-/* CONTADOR */
 #contador {
     margin-bottom: 15px;
     font-size: 14px;
 }
 
-/* LISTA */
 #lista-tareas {
     list-style: none;
 }
 
-/* ITEM */
 #lista-tareas li {
     display: flex;
     justify-content: space-between;
@@ -97,32 +88,28 @@ nav a {
     box-shadow: var(--sombra);
 }
 
-/* CONTENEDOR IZQUIERDO (checkbox + texto) */
 #lista-tareas li div {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* CHECKBOX */
 #lista-tareas input[type="checkbox"] {
     width: 18px;
     height: 18px;
     cursor: pointer;
 }
 
-/* TEXTO */
 #lista-tareas span {
     font-size: 14px;
 }
 
-/* TAREA COMPLETADA */
 .completada span {
     text-decoration: line-through;
     opacity: 0.6;
 }
 
-/* BOTON ELIMINAR */
+
 #lista-tareas button {
     background-color: crimson;
     color: white;

@@ -32,7 +32,7 @@ const mostrarProductos = () => {
     });
 
     contenedor.innerHTML = filtrados.map(p => `
-        <div class="tarjeta ${p.enStock ? "" : "sin-stock"}">
+        <div class="card ${p.enStock ? "" : "sin-stock"}">
             <h3>${p.nombre}</h3>
             <p>Precio: $${p.precio}</p>
             <p>Categoría: ${p.categoria}</p>
