@@ -41,7 +41,6 @@ const mostrarProductos = () => {
     `).join("");
 };
 
-/* 🔥 BOTON RESET (BIEN HECHO) */
 btnReset.addEventListener("click", () => {
     selectCategoria.value = "todas";
     rangePrecio.value = 300;
@@ -52,16 +51,12 @@ btnReset.addEventListener("click", () => {
     mostrarProductos();
 });
 
-/* EVENTOS */
 selectCategoria.addEventListener("change", mostrarProductos);
-
 rangePrecio.addEventListener("input", () => {
     valorPrecio.textContent = rangePrecio.value;
     mostrarProductos();
 });
-
 checkStock.addEventListener("change", mostrarProductos);
 inputBusqueda.addEventListener("input", mostrarProductos);
 
-/* INICIAL */
 mostrarProductos();

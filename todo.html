@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>Todo</title>
+</head>
+<body>
+    <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="todo.html">Todo</a>
+    <a href="api-demo.html">Pokédex</a>
+    </nav>
+
+    <div class="todo-container">
+    <form id="form-tareas">
+        <input type="text" id="inputTarea" placeholder="Nueva tarea...">
+        <button type="submit">Agregar</button>
+    </form>
+
+    <p id="contador">Tareas pendientes: 0</p>
+    <p id="contador-completadas">Tareas completadas: 0</p>
+
+    <ul id="lista-tareas"></ul>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
