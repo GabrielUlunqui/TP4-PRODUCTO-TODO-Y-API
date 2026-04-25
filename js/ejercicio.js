@@ -15,7 +15,11 @@ const buscarAlumnos = (alumnos, nombre) => {
 const alumnos = [
     { nombre: "Analia", nota: 8 },
     { nombre: "Carl", nota: 4 },
-    { nombre: "Braian", nota: 9 },
+    { nombre: "Sam", nota: 9 },
     { nombre: "pepe", nota: 6 }
 ];
 
+console.log("Promedio:", calcularPromedio([8, 3, 6, 7]));
+console.log("Aprobados:", filtrarAprobados(alumnos));
+console.log("Almunos formateados", formatearAlumnos(alumnos));
+console.log("Alumno encontrado", buscarAlumnos(alumnos, "Sam"));
