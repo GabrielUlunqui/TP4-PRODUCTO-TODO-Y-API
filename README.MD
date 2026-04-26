@@ -112,6 +112,7 @@ El proyecto está publicado en GitHub Pages:
 │   ├── Productos.js
 │   ├── todo.js
 │   └── api-demo.js
+│    └── ejercicio.js
 │
 └── CAPTURA/
     ├── inicio.png
